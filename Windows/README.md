@@ -9,15 +9,15 @@ O MSYS2 é uma coleção de ferramentas e bibliotecas que fornecem um ambiente f
 2 - Execute o instalador (a instalação do MSYS2 requer o Windows 10 de 64 bits ou mais recente).  
 3 -	Digite a pasta de instalação desejada (caminho curto somente ASCII em um volume NTFS, sem acentos, sem espaços, sem links simbólicos, sem subs ou unidades de rede, sem FAT).  
 
-<img src="https://github.com/CleyltonAlcantara/CleyltonAlcantara/blob/main/MSYS/Captura1.png">
+<img src="https://github.com/CleyltonAlcantara/MSYS/blob/main/Windows/Captura1.png">
 
 4 - Quando terminar, clique em Concluir.  
 
-<img src="https://github.com/CleyltonAlcantara/CleyltonAlcantara/blob/main/MSYS/Captura2.png">
+<img src="https://github.com/CleyltonAlcantara/MSYS/blob/main/Windows/Captura2.png">
 
 5 - Agora o MSYS2 está pronto para você e um terminal para o ambiente UCRT64 será iniciado.  
 
-<img src="https://github.com/CleyltonAlcantara/CleyltonAlcantara/blob/main/MSYS/Captura3.png">
+<img src="https://github.com/CleyltonAlcantara/MSYS/blob/main/Windows/Captura3.png">
 
 6 - Você provavelmente vai querer instalar algumas ferramentas como o mingw-w64 GCC para começar a compilar projetos.  
 Execute o seguinte comando:  
