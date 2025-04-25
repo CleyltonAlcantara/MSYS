@@ -47,7 +47,7 @@ pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
     - Na barra de pesquisa do Windows, digite __Configurações__ para abrir as Configurações do Windows.  
     - Pesquise __Editar as variáveis de ambiente para sua conta__.  
     - Em suas variáveis ​​de usuário, selecione a variável __Path__ e depois selecione __Editar__.  
-    - Selecione __Novo__ e adicione à lista a pasta de destino MinGW-w64 que você registrou durante o processo de instalação. Se você usou as configurações padrão acima, este será o caminho: ``` C:\msys64\ucrt64\bin ```.  
+    - Selecione __Novo__ e adicione à lista a pasta de destino MinGW-w64 que você registrou durante o processo de instalação. Se você usou as configurações padrão acima, este será o caminho: `` C:\msys64\ucrt64\bin ``.  
     - Selecione __OK__ e, em seguida, __OK__ novamente na janela Variáveis ​​de Ambiente para atualizar a PATH variável de ambiente. É necessário reabrir todas as janelas do console para que a PATH variável de ambiente atualizada fique disponível.
 </br></br>
 
@@ -64,9 +64,11 @@ g++ --version
 gdb --version
 ```
 Você deverá ver uma saída informando quais versões do GCC, g++ e GDB você instalou. Se não for o caso:  
-1 - Certifique-se de que a entrada da variável PATH corresponda ao local binário do MinGW-w64 onde a cadeia de ferramentas foi instalada. Se os compiladores não existirem nessa entrada PATH, certifique-se de ter seguido as instruções anteriores.
-Se gcctiver a saída correta, mas não gdb, então você precisa instalar os pacotes que estão faltando no conjunto de ferramentas MinGW-w64.  
-2 - Se durante a compilação você receber a mensagem "O valor de miDebuggerPath é inválido", uma das causas pode ser que você não tenha o mingw-w64-gdbpacote.
 
+1 - Certifique-se de que a entrada da variável PATH corresponda ao local binário do MinGW-w64 onde a cadeia de ferramentas foi instalada. Se os compiladores não existirem nessa entrada PATH, certifique-se de ter seguido as instruções anteriores.  
 
-  
+2 - Se ``gcc`` tiver a saída correta, mas não ``gdb``, então você precisa instalar os pacotes que estão faltando no conjunto de ferramentas MinGW-w64.  
+    - Se durante a compilação você receber a mensagem "O valor de miDebuggerPath é inválido", uma das causas pode ser que você não tenha o ``mingw-w64-gdbpacote``.  
+</br></br>
+
+_Em caso de dúvidas leia o <a href="https://code.visualstudio.com/docs/cpp/config-mingw">documento original</a>_.
